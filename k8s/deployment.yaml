@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: employee-service
-          image: abu/gs-demo-docker
+          image: springio/gs-spring-boot-docker
           imagePullPolicy: Never
           restartPolicy: Never
           ports:
@@ -49,4 +49,4 @@ spec:
   ports:
     - name: hazelcast
       port: 5701
-  type: LoadBalancer
+  type: NodePort
